@@ -11,6 +11,7 @@
 
 **Parameters:**
 
+| Property | Description |
 |------|------|
 | `duplicateHandling` | can also be: `REMOVE_ALL_EXISTING` or `REMOVE_FROM_LIST` |
 | `timeZoneOption` | an also be: `ZIPCODE` or `EXPLICIT` |
