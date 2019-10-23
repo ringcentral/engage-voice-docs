@@ -6,8 +6,10 @@
 
 **Headers:**
 
-`Content-Type` - `application/json`
-`X-Auth-Token` - (Connect First authentication token)
+| Header | Value |
+|--------|-------|
+| `Content-Type` | `application/json` |
+| `X-Auth-Token` | Connect First authentication token |
 
 **Parameters:**
 
