@@ -1,19 +1,23 @@
-# Direct Lead Loader
+## Direct Lead Loader
 
 Leads > Direct Lead Loader
 
 **NOTE -** Comments are not valid in JSON, you will need to remove them before sending these requests.
 
-**Endpoint:** - `POST {{ server }}/api/v1/admin/accounts/{{ accountId }}/campaigns/{{ campaignId }}/leadLoader/direct`
+### Endpoint
 
-**Headers:**
+`POST {{ server }}/api/v1/admin/accounts/{{ accountId }}/campaigns/{{ campaignId }}/leadLoader/direct`
+
+### Headers
 
 | Header | Value |
 |--------|-------|
-| `Content-Type` | `application/json` |
-| `X-Auth-Token` | Connect First authentication token |
+| `Content-Type` | `application/JSON` |
+| `X-Auth-Token` | {{Valid auth token}} |
 
-**Parameters:**
+### Body
+
+#### Properties Notes
 
 | Property | Type | Description |
 |----------|------|-------------|
@@ -23,6 +27,8 @@ Leads > Direct Lead Loader
 | `uploadLeads` | multiple lead objects can be uploaded in the `uploadLeads` array. |
 | `lead.leadPhone` | string | piped leads canb be sent, e.g. - "leadPhone": "8888888888|8888888888" |
 | `lead.externId` | integer | required field |
+
+#### Example
 
 ```json
 {
