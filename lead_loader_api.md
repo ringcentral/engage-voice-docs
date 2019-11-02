@@ -1,5 +1,7 @@
 # Direct Lead Loader
 
+Leads > Direct Lead Loader
+
 **NOTE -** Comments are not valid in JSON, you will need to remove them before sending these requests.
 
 **Endpoint:** - `POST {{ server }}/api/v1/admin/accounts/{{ accountId }}/campaigns/{{ campaignId }}/leadLoader/direct`
@@ -13,13 +15,14 @@
 
 **Parameters:**
 
-| Property | Description |
+| Property | Type | Description |
 |------|------|
-| `duplicateHandling` | can also be: `REMOVE_ALL_EXISTING` or `REMOVE_FROM_LIST` |
-| `timeZoneOption` | an also be: `ZIPCODE` or `EXPLICIT` |
-| `dialPriority` | allows you to insert a lead to the top of the dialer cache for immediate dialing if you want a normal insert then do not add this parameter. |
-| `lead.leadPhone` | piped leads canb be sent, e.g. - "leadPhone": "8888888888|8888888888" |
-| `lead.externId` | required field |
+| `duplicateHandling` | string, enum | also be: `REMOVE_ALL_EXISTING` or `REMOVE_FROM_LIST` |
+| `timeZoneOption` | string, enum | an also be: `ZIPCODE` or `EXPLICIT` |
+| `dialPriority` | string | allows you to insert a lead to the top of the dialer cache for immediate dialing if you want a normal insert then do not add this parameter. |
+| `uploadLeads` | multiple lead objects can be uploaded in the `uploadLeads` array. |
+| `lead.leadPhone` | string | piped leads canb be sent, e.g. - "leadPhone": "8888888888|8888888888" |
+| `lead.externId` | integer | required field |
 
 ```json
 {
