@@ -16,7 +16,7 @@ Leads > Direct Lead Loader
 **Parameters:**
 
 | Property | Type | Description |
-|------|------|
+|----------|------|-------------|
 | `duplicateHandling` | string, enum | also be: `REMOVE_ALL_EXISTING` or `REMOVE_FROM_LIST` |
 | `timeZoneOption` | string, enum | an also be: `ZIPCODE` or `EXPLICIT` |
 | `dialPriority` | string | allows you to insert a lead to the top of the dialer cache for immediate dialing if you want a normal insert then do not add this parameter. |
