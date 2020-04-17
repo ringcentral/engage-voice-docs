@@ -25,7 +25,7 @@ Leads > Direct Lead Loader
 | `timeZoneOption` | string, enum | an also be: `ZIPCODE` or `EXPLICIT` |
 | `dialPriority` | string | allows you to insert a lead to the top of the dialer cache for immediate dialing if you want a normal insert then do not add this parameter. |
 | `uploadLeads` | multiple lead objects can be uploaded in the `uploadLeads` array. |
-| `lead.leadPhone` | string | piped leads canb be sent, e.g. - "leadPhone": "8888888888|8888888888" |
+| `lead.leadPhone` | string | piped leads can be sent, e.g. - "leadPhone": "8888888888|8888888888" |
 | `lead.externId` | integer | required field |
 
 #### Example
